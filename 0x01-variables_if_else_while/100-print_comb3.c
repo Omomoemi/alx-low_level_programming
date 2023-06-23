@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - A progra that prints all possible combinstions of two
  *
  * Retrun: 0 (success)
  */

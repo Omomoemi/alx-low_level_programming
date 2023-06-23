@@ -1,16 +1,20 @@
 #include <stdio.h>
 /**
  * main - A program that prints alphabets in reverse order
+ *
  * Return: 0 (success)
  */
 int main(void)
 {
 	char c;
 
-	for (c = 'z'; c >= 'a'; c--)
-		putchar(c);
+	c = 'z';
+	while
+		(c >= 'a') {
+			putchar(c);
+			c--;
+		}
 
 	putchar('\n');
-
 	return (0)
 }

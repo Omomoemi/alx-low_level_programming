@@ -1,20 +1,28 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 /**
- * *_strcat - A function that concanates two strings
+ * _strcat - A function that concanates two strings
  * @dest: first string to concanate
  * @src: second string to concanate
- * Return: A pointer to the resulting string
+ * Return: Always 0
  */
-int main(void)
+char *_strcat(char *dest, char *src)
 {
-	char s1[] = "Hello ";
-	char s2[] = "World!\n";
+	int lengthD, lengthS;
 
-	strcat(s1, s2);
-	printf("final string is: %s ", s1);
-	return 0;
+	lengthD = 0;
+	lengthS = 0;
+
+	while (*(dest + lengthD) != '\0')
+		lengthD++;
+
+	while (*(src + lengthS) != '\0' && lengthD < 97)
+	{
+		*(dest + lengthD) = *(src + lengthS);
+		lengthD++;
+		lengthS++;
+	}
+	*(dest + lengthD) = '\0';
+	return (dest);
 }
 
 

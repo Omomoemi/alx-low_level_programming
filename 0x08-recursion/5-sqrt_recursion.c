@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _sqrt_recursion - A function that reurns the sqrt of a number
+ * sqrt2 - A function that reurns the sqrt of a number
  * @a: Same number as n
  * @b: number that iterates n
  *
